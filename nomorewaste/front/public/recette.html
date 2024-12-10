@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
+  <title>NO MORE WASTE - Trouvez des recettes</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">
+      Trouvez des repas pour vos ingrédients
+    </h1>
+    <blockquote>
+      La vraie nourriture n'a pas d'ingrédients, la vraie nourriture est des ingrédients.
+      <br>
+      <cite>
+        _ Jamie Oliver
+      </cite>
+    </blockquote>
+    <div class="search-bar">
+      <input 
+             type="text"
+             placeholder="Entrez un ingrédient" 
+             class="search-field" />
+      <button class="search-btn">
+        <i class ="fas fa-search"></i>
+      </button>
+    </div>
+  </header>
+  <div class="meals-container">
+    
+  </div>
+  <div class="recipe-container">
+    <button class="recipe-close-btn">
+        <i class="fas fa-times"></i>
+    </button> 
+    <div class="recipe">
+     
+    </div>
+  </div>
+
+  <div class="add-recipe-container">
+    <h2>Ajouter une recette</h2>
+    <form id="add-recipe-form">
+      <input type="text" id="recipe-name" placeholder="Nom de la recette" required>
+      <textarea id="recipe-ingredients" placeholder="Ingrédients" required></textarea>
+      <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+      <input type="text" id="recipe-category" placeholder="Catégorie" required>
+      <input type="url" id="recipe-image" placeholder="URL de l'image" required>
+      <button type="submit">Ajouter la recette</button>
+    </form>
+  </div>
+
+  <script src="../api/recipes.js"></script>
+  <script src="recettejs.js"></script>
+</body>
+</html>
